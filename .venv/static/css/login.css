@@ -159,4 +159,15 @@ body{
       opacity: 0.8;
     }
 
-  
+    .input-group-password{
+      position: relative;
+    }
+    .icon{
+      position: absolute;
+      height: 30px;
+      top: 6px;
+      left: 87%;
+      transform: -50%;
+      opacity: 0.6;
+      cursor: pointer;
+    }

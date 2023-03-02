@@ -1,12 +1,9 @@
 const contraseña = document.querySelector('.input-password')
-const confirmarContraseña = document.querySelector('#confirm-password')
-const username = document.querySelector('.input-username')
 const email = document.querySelector('.input-email')
 const date = document.querySelector('.input-date')
 
 const buttonRegistrar = document.querySelector('.login-button')
 var buttonEye = document.querySelector('#eye')
-var buttonEye2 = document.querySelector('#eye2')
 
 buttonRegistrar.addEventListener('click', registrarDatos)
 buttonEye.addEventListener('click',mostrarPassword)
@@ -18,18 +15,6 @@ function mostrarPassword(){
     }else{
         contraseña.type = "password"
         buttonEye.style.opacity = 0.2
-    }
-}
-
-buttonEye2.addEventListener('click',mostrarPassword2)
-function mostrarPassword2(){
-    console.log('hola');
-    if(confirmarContraseña.type === "password"){
-        confirmarContraseña.type = "text"
-        buttonEye2.style.opacity = 0.8 
-    }else{
-        confirmarContraseña.type = "password"
-        buttonEye2.style.opacity = 0.2
     }
 }
 
