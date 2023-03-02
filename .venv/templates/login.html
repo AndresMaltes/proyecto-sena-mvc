@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+          <img id="arkitask" src="../static/img/LogotipoBlan.png">
+      
+          <form action="/" class="form inactive">
+              <label for="email" class="label">Email address</label>
+              <input type="text" id="email" placeholder="@soy.sena.edu.co" class="input input-email">
+      
+      
+              <label for="password" class="label">Password</label>
+              <div class="input-group-password">
+                  <input type="password" id="password" placeholder="*********" class="input input-password" pattern="[a-zA-Z\D○2.]{1,8}" required>
+                  <img src="show.png" alt="" class="icon" id="eye">
+              </div>
+                    
+      
+              
+              
+              <div class="buttons">
+                  <button class="secondary-button signup-button" type="reset">Sign up</button>
+                  <input type="submit" value="Log in" class="primary-button login-button">
+              </div>
+            
+              <a href="/">Forgot my password</a>
+          </form>
+      
+          <script src="confirmPassword.js"></script>
+        </div>
+      </div>
+</body>
+</html>
