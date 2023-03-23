@@ -8,49 +8,194 @@
     <link rel="stylesheet" href="../static/css/gerente.css">  
 </head>
 <body>
-    <nav>
-      <ul>
-        <li>
-            <a href="#" class="logo"> <img src="../static/img/LogoSolo.png" alt="Logo" width="60px" height="50px">
-              <span class="nav-item-1"><img src="../static/img/Nombre.png" alt="Nombre" width="100px"></span>
-            </a>
-        </li>
-        <li>
-          <a href="#"> <img src="../static/img/usuarios.png" alt="Usuario" width="40px">
-            <span class="nav-item">Usuarios</span>
-          </a>
-        </li>
-        <li>
-          <a href="#"> <img src="../static/img/asistencia.png" alt="Asistencia" width="40px">
-            <span class="nav-item">Asistencia</span>
-          </a>
-        </li>
-        <li>
-          <a href="#"> <img src="../static/img/grupoTrabajo.png" alt="Grupo de Trabajo" width="40px">
-            <span class="nav-item">Grupo de Trabajo</span>
-          </a>
-        </li>
-        <li>
-          <a href="#"> <img src="../static/img/actividades.png" alt="Actividades" width="40px">
-            <span class="nav-item">Actividades</span>
-          </a>
-        </li>
-        <li>
-          <a href="#"> <img src="../static/img/entregables.png" alt="Entregables" width="40px">
-          <span class="nav-item">Entregables</span>
-          </a>
-        </li>
-        <li>
-          <a href="#"> <img src="../static/img/encargado.png" alt="Encargado" width="40px">
-            <span class="nav-item">Encargado</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="item-out"> <img src="../static/img/salir.png" alt="Salir" width="40px">
-            <span class="nav-item">Salir</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="flex-container">
+        <nav>
+          <ul>
+            <li>
+                <a href="#" class="logo"> <img src="../static/img/LogoSolo.png" alt="Logo" width="60px" height="50px">
+                  <span class="nav-item-1"><img src="../static/img/Nombre.png" alt="Nombre" width="100px"></span>
+                </a>
+            </li>
+            <li>
+              <a href="#"> <img src="../static/img/usuarios.png" alt="Usuario" width="40px">
+                <span class="nav-item">Usuarios</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"> <img src="../static/img/asistencia.png" alt="Asistencia" width="40px">
+                <span class="nav-item">Asistencia</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"> <img src="../static/img/grupoTrabajo.png" alt="Grupo de Trabajo" width="40px">
+                <span class="nav-item">Grupo de Trabajo</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"> <img src="../static/img/actividades.png" alt="Actividades" width="40px">
+                <span class="nav-item">Actividades</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" id="entregables"> <img src="../static/img/entregables.png" alt="Entregables" width="40px">
+              <span class="nav-item">Entregables</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"> <img src="../static/img/encargado.png" alt="Encargado" width="40px">
+                <span class="nav-item">Encargado</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-out"> <img src="../static/img/salir.png" alt="Salir" width="40px">
+                <span class="nav-item">Salir</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="inactive" id="list-entregables">
+            <div class="listado">
+                <h1>
+                    Listado de Entregables
+                </h1>
+            </div>
+            <div class="name_list">
+                    <ul>
+                        Fecha de entrega
+                        <li class="list">
+                            <p>2021-06-14</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list">
+                            <p>2021-08-18</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list">
+                            <p>2021-04-25</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list">
+                            <p>2021-12-24</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list">
+                            <p>2021-08-24</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        Imagen Entregable
+                        <li class="list">
+                            <p>Sin vista previa</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list">
+                            <p>Sin vista previa</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list">
+                            <p>Sin vista previa</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list">
+                            <p>Sin vista previa</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list">
+                            <p>Sin vista previa</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        Comentarios
+                        <li class="list size2">
+                            <p>Imagen de los planos</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list size2">
+                            <p>Colegio carrera 10</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list size2">
+                            <p>Arquitectura parques del sol</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list size2">
+                            <p>Pabellon de internos</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list size2">
+                            <p>Colegio calle 4</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        Estados
+                        <li class="list flex size">
+                            <p>Entregable Aceptado</p><p>Rechazar</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list flex size">
+                            <p>Entregable Aceptado</p><p>Rechazar</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list flex size">
+                            <p>Entregable Aceptado</p><p>Rechazar</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list flex size">
+                            <p>Entregable Rechazado</p><p>Aceptar</p>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list flex size">
+                            <p>Entregable Rechazado</p><p>Aceptar</p>
+                        </li>
+
+                    </ul>
+                    <ul>
+                        Detalles
+                        <li class="list">
+                            <center><button>Detalles</button></center>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list">
+                            <center><button>Detalles</button></center>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list">
+                            <center><button>Detalles</button></center>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list">
+                            <center><button>Detalles</button></center>
+
+                        </li>
+                        <hr class="line">
+                        <li class="list">
+                            <center><button>Detalles</button></center>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+    </div>
+    <script src="../static/JavaScript/menu_gerente.js"></script>
 </body>
 </html>
