@@ -1,8 +1,20 @@
+*{font-family:Arial, Helvetica, sans-serif;
+    overflow: auto;
+}
+
+
 header{ padding: 4px; 
     background-color: rgb(243, 241, 241); 
     text-align: start;
     font-size: 20px;
-    overflow: auto;
+
+}
+footer{
+    margin: 0;
+    padding: 4px; 
+    background-color: rgb(243, 241, 241); 
+    text-align: start;
+    font-size: 20px;
 }
 
 nav{padding: 30px 50px 10px 80px;  
@@ -10,15 +22,13 @@ nav{padding: 30px 50px 10px 80px;
 }
 
 section{ padding: 20%;
-    background-image: url('../img/portada.jpg');
+    background-image: url('../img/portada.jpg') ;
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;
 }
 
-footer{padding: 10px;
-    background-color: rgb(221, 221, 221);
-}
+
 .flex-container{ 
     margin: 1%;
     display: flex;
@@ -28,21 +38,25 @@ footer{padding: 10px;
     justify-content: space-evenly;
     background-color: rgb(255, 255, 255);  
 }
-p{  font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
+p{  text-transform: uppercase;
     text-align: center;
-    font-weight:bold;
-}
+    font-weight:bold;}
+
 h1{
-    color: white;font-size:50px;}
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+    color: rgb(255, 255, 255);font-size:50px;}
+
+
 .h2{margin-left: 50px;
     font-size:small;
     color: rgb(196, 197, 197);
 }
+
 .p1{
-    color: white; font-size:30px;
+    color: rgb(255, 255, 255); font-size:30px;
 }
-.p2{    color: white; font-size:20px;
+.p2{    color: white; font-size:20px;   
 }
 .logo{
     margin: 3px; margin-right: 10%;
@@ -68,7 +82,7 @@ h1{
     border-color: rgb(235, 186, 28);
 }
 .button3{
-    background-color: transparent;
+    background-color:rgb(235, 186, 28) ;
     border-color: rgb(235, 186, 28);
     width: 150px; height: 50px;
     border-radius: 5%;
@@ -76,4 +90,62 @@ h1{
 
 #twitter{
     margin: 6px;
+}
+
+
+.flex-container1{ 
+    display: flex;
+    align-content: space-between;
+    padding: 10px 10px 10px 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(245, 243, 242);
+
+    
+}
+.flex-container1 > div{
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(235, 186, 28);
+    margin: 5px;}
+
+.text1{  
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(245, 245, 242);  
+    font-size: 30px;
+}
+
+.text1 > div {
+    border-style: groove;
+    border-color: rgb(207, 160, 5);
+    border-radius: 25%;
+    width: 400px;
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(235, 186, 28);
+    margin: 5px;
+    }
+.ventajas{
+    padding: 50px;
+    border:2px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 30px;
+    animation-name: exp;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+
+@keyframes exp {
+    from{background-image:url(../img/ventajas.jpg)}
+    to {background-image: url(../img/ventajas2.jpg);}
+}
+
+
+
+h3{
+    font-size: 30px;
 }
